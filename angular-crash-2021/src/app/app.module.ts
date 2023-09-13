@@ -14,6 +14,11 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ListingsPageComponent } from './components/listings-page/listings-page.component';
+import { ListingDetailPageComponent } from './listing-detail-page/listing-detail-page.component';
+import { StatusPageComponent } from './status-page/status-page.component';
+import { MyListingsPageComponent } from './my-listings-page/my-listings-page.component';
+import { NewListingPageComponent } from './new-listing-page/new-listing-page.component';
+import { EditListingPageComponent } from './edit-listing-page/edit-listing-page.component';
 
 const appRoutes: Routes = [
   { path: '', component: TasksComponent },
@@ -31,6 +36,11 @@ const appRoutes: Routes = [
     AboutComponent,
     FooterComponent,
     ListingsPageComponent,
+    ListingDetailPageComponent,
+    StatusPageComponent,
+    MyListingsPageComponent,
+    NewListingPageComponent,
+    EditListingPageComponent,
   ],
   imports: [
     BrowserModule,
