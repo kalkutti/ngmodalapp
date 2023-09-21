@@ -10,9 +10,7 @@ import { Task } from '../../Task';
 export class ListingsPageComponent implements OnInit {
   tasks: Task[] = [];
 
-  constructor(private taskService: TaskService) {
-    this.day = formatDate(this.date, 'mmmm dS', 'en-US', '+0530');
-  }
+  constructor(private taskService: TaskService) {}
 
   ngOnInit(): void {
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
