@@ -11,7 +11,7 @@ import { formatDate } from '@angular/common';
 export class TasksComponent implements OnInit {
   tasks: Task[] = [];
   date = new Date();
-  day = '';
+  day = 'September 21th';
 
   constructor(private taskService: TaskService) {
     this.day = formatDate(this.date, 'mmmm dS', 'en-US', '+0530');
