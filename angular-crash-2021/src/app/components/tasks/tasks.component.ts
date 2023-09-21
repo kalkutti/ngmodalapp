@@ -14,7 +14,7 @@ export class TasksComponent implements OnInit {
   day = '';
 
   constructor(private taskService: TaskService) {
-    this.day = formatDate(this.date, "mmmm dS");
+    this.day = formatDate(this.date, 'mmmm dS', 'en-US', '+0530');
   }
 
   ngOnInit(): void {
