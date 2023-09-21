@@ -13,11 +13,10 @@ export class TasksComponent implements OnInit {
   date = new Date();
   day = 'September 21th';
 
-  constructor(private taskService: TaskService) {
-    this.day = formatDate(this.date, 'mmmm dS', 'en-US', '+0530');
-  }
+  constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
+    this.day = formatDate(this.date, 'mmmm dS', 'en-US', '+0530');
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks.filter((t) => t.day == this.day)));
   }
 
