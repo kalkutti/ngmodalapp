@@ -18,7 +18,6 @@ export class TasksComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.day);
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks.filter((t) => t.day == this.day)));
   }
 
@@ -36,6 +35,13 @@ export class TasksComponent implements OnInit {
   }
 
   addTask(task: Task) {
-    this.taskService.addTask(task);
+    this.taskService
+      .addTask(task)
+      .subscribe(
+        (task) => { 
+          if (task.day == this.day) 
+            this.tasks.push(task);
+        }
+      );
   }
 }
