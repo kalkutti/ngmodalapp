@@ -18,6 +18,11 @@ export class TaskService {
 
   constructor(private http: HttpClient) {}
 
+  getSingleTask(id: string): Observable<Task> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Task>(this.apiUrl);
+  }
+
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.apiUrl);
   }
