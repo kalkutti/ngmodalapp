@@ -18,7 +18,7 @@ export class ListingDetailPageComponent {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.taskService.getSingleTask(id).subscribe((taskre) => this.task = taskre));
+    this.taskService.getSingleTask(id).subscribe((taskre) => { this.task = taskre; });
     console.log(this.task);
     this.taskService.getTasks().subscribe((tasks) => (this.task = tasks.find((t) => t.id == 1)));
   }
