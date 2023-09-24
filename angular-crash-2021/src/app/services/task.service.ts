@@ -20,7 +20,7 @@ export class TaskService {
 
   getSingleTask(id: string): Observable<Task> {
     const url = `${this.apiUrl}/${id}`;
-    return this.http.get<Task>(this.apiUrl);
+    return this.http.get<Task>(url);
   }
 
   getTasks(): Observable<Task[]> {
