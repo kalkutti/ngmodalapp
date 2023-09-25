@@ -13,6 +13,7 @@ export class StatusPageComponent {
   task: Task;
   
   constructor(
+    private route: ActivatedRoute,
     private location: Location,
     private taskService: TaskService,
   ) { }
