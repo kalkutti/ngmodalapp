@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../Task';
 
