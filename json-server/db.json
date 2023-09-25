@@ -5,21 +5,24 @@
       "text": "Doctors Appointment",
       "day": "May 5",
       "time": "2:30pm",
-      "reminder": true
+      "reminder": true,
+      "status": false,
     },
     {
       "id": 2,
       "text": "Meeting at School",
       "day": "May 6",
       "time": "2:30pm",
-      "reminder": true
+      "reminder": true,
+      "status": false,
     },
     {
       "id": 3,
       "text": "Food Shopping",
       "day": "May 7",
       "time": "12:30pm",
-      "reminder": false
+      "reminder": false,
+      "status": false,
     }
   ]
 }
