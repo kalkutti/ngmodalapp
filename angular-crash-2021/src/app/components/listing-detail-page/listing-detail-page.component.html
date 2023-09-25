@@ -1,4 +1,7 @@
 <div class="content-box">
   <button (click)="backClicked()">Back</button>
   <h2>{{task.text}}</h2>
+  <a routerLink="../status/{{task.id}}">
+    <button>Status</button>
+  </a>
 </div>
