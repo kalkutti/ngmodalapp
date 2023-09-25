@@ -24,6 +24,6 @@ export class ListingDetailPageComponent {
   }
 
   backClicked() {
-    this._location.back();
+    this.location.back();
   }
 }
