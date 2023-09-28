@@ -43,6 +43,8 @@ export class NewListingPageComponent {
     this.text = '';
     this.day = '';
     this.reminder = false;
+
+    this.router.navigateByUrl('/my-listings');
   }
 
 }
