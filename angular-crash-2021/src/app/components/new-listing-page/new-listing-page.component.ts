@@ -1,4 +1,4 @@
-import { Component, ngOnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Task } from '../../Task';
 import { Router } from '@angular/router';
