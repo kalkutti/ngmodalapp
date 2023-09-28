@@ -1,6 +1,7 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, ngOnInit, Output, EventEmitter } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Task } from '../../Task';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-listing-page',
@@ -15,6 +16,13 @@ export class NewListingPageComponent {
   reminder: boolean = false;
   showAddTask: boolean;
   subscription: Subscription;
+
+  constructor(
+    private router: Router,
+  ) { }
+
+  ngOnInit(): void {
+  }
 
   onSubmit() {
     if (!this.text) {
