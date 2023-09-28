@@ -28,4 +28,15 @@ export class MyListingsPageComponent {
     task.reminder = !task.reminder;
     this.taskService.updateTaskReminder(task).subscribe();
   }
+
+  addTask(task: Task) {
+    this.taskService
+      .addTask(task)
+      .subscribe(
+        (task) => { 
+          if (task.day == this.day) 
+            this.tasks.push(task);
+        }
+      );
+  }
 }
