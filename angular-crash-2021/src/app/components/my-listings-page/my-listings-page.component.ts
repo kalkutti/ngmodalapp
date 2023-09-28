@@ -32,11 +32,6 @@ export class MyListingsPageComponent {
   addTask(task: Task) {
     this.taskService
       .addTask(task)
-      .subscribe(
-        (task) => { 
-          if (task.day == this.day) 
-            this.tasks.push(task);
-        }
-      );
+      .subscribe((task) => this.tasks.push(task));
   }
 }
