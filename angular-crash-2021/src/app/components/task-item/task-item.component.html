@@ -12,7 +12,7 @@
     ></fa-icon>
   </h3>
   <p>{{ task.day }}</p>
-  <a [routerLink]="['/new-listing', task.id]">
+  <a routerLink="/new-listing/{{task.id}}">
   <button class="btn">New Task</button>
   </a>
   <a routerLink="/listings/{{task.id}}">
