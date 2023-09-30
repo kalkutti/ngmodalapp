@@ -27,7 +27,7 @@ const appRoutes: Routes = [
   { path: 'listings/:id', component: ListingDetailPageComponent },
   { path: 'listings/status/:id', component: StatusPageComponent },
   { path: 'my-listings', component: MyListingsPageComponent },
-  { path: 'new-listing', component: NewListingPageComponent },
+  { path: 'new-listing/:id', component: NewListingPageComponent },
   { path: 'edit-listing', component: EditListingPageComponent },
 ];
 
