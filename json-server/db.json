@@ -23,6 +23,22 @@
       "time": "12:30pm",
       "reminder": false,
       "status": false
+    },
+    {
+      "text": "New Task",
+      "day": "September 25",
+      "time": "2:00pm",
+      "reminder": false,
+      "status": false,
+      "id": 4
+    },
+    {
+      "text": "New Task2",
+      "day": "September 25",
+      "time": "2:00pm",
+      "reminder": false,
+      "status": false,
+      "id": 5
     }
   ]
 }
