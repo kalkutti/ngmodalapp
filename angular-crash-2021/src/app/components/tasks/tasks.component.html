@@ -1,4 +1,7 @@
 <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+
+<h5 class="text-md-center m-5">Search for Flights</h5>
+
 <app-task-item
   *ngFor="let task of tasks"
   [task]="task"
