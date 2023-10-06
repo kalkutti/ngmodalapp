@@ -51,6 +51,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
