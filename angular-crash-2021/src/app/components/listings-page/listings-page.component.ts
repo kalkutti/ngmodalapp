@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../Task';
+import { TaskItemComponent } from '../task-item/task-item.component';
 
 @Component({
-  selector: 'app-listings-page',
-  templateUrl: './listings-page.component.html',
-  styleUrls: ['./listings-page.component.css']
+    selector: 'app-listings-page',
+    templateUrl: './listings-page.component.html',
+    styleUrls: ['./listings-page.component.css'],
+    standalone: true,
+    imports: [TaskItemComponent]
 })
 export class ListingsPageComponent implements OnInit {
   tasks: Task[] = [];

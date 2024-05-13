@@ -5,9 +5,10 @@ import { TaskService } from '../../services/task.service';
 import { Task } from '../../Task';
 
 @Component({
-  selector: 'app-status-page',
-  templateUrl: './status-page.component.html',
-  styleUrls: ['./status-page.component.css']
+    selector: 'app-status-page',
+    templateUrl: './status-page.component.html',
+    styleUrls: ['./status-page.component.css'],
+    standalone: true
 })
 export class StatusPageComponent {
   task: Task;

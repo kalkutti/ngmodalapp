@@ -1,11 +1,21 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../Task';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { RouterLink } from '@angular/router';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+import { NgClass, NgStyle } from '@angular/common';
 
 @Component({
-  selector: 'app-task-item',
-  templateUrl: './task-item.component.html',
-  styleUrls: ['./task-item.component.css'],
+    selector: 'app-task-item',
+    templateUrl: './task-item.component.html',
+    styleUrls: ['./task-item.component.css'],
+    standalone: true,
+    imports: [
+        NgClass,
+        FaIconComponent,
+        NgStyle,
+        RouterLink,
+    ],
 })
 export class TaskItemComponent implements OnInit {
   @Input() task: Task;

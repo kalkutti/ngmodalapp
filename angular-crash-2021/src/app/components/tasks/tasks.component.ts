@@ -2,11 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../Task';
 import { formatDate } from '@angular/common';
+import { TaskItemComponent } from '../task-item/task-item.component';
+import { AddTaskComponent } from '../add-task/add-task.component';
 
 @Component({
-  selector: 'app-tasks',
-  templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css'],
+    selector: 'app-tasks',
+    templateUrl: './tasks.component.html',
+    styleUrls: ['./tasks.component.css'],
+    standalone: true,
+    imports: [AddTaskComponent, TaskItemComponent],
 })
 export class TasksComponent implements OnInit {
   tasks: Task[] = [];

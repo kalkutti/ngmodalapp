@@ -8,8 +8,8 @@ describe('TaskItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TaskItemComponent ]
-    })
+    imports: [TaskItemComponent]
+})
     .compileComponents();
   });
 

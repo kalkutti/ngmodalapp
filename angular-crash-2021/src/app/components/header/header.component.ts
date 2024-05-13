@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { UiService } from '../../services/ui.service';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css'],
+    standalone: true,
+    imports: [ButtonComponent],
 })
 export class HeaderComponent implements OnInit {
   title: string = 'Task Tracker';

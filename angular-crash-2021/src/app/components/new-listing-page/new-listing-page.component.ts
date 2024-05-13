@@ -2,11 +2,14 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Task } from '../../Task';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-new-listing-page',
-  templateUrl: './new-listing-page.component.html',
-  styleUrls: ['./new-listing-page.component.css']
+    selector: 'app-new-listing-page',
+    templateUrl: './new-listing-page.component.html',
+    styleUrls: ['./new-listing-page.component.css'],
+    standalone: true,
+    imports: [FormsModule]
 })
 export class NewListingPageComponent {
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();

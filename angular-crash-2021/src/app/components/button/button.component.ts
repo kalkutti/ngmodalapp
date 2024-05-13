@@ -1,9 +1,12 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 @Component({
-  selector: 'app-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css'],
+    selector: 'app-button',
+    templateUrl: './button.component.html',
+    styleUrls: ['./button.component.css'],
+    standalone: true,
+    imports: [NgStyle],
 })
 export class ButtonComponent implements OnInit {
   @Input() text!: string;

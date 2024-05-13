@@ -1,9 +1,10 @@
 <header>
   <h1>{{ title }}</h1>
-  <app-button
-    *ngIf="hasRoute('/') || hasRoute('/my-listings')"
-    color="{{ showAddTask ? 'red' : 'green' }}"
-    text="{{ showAddTask ? 'Close' : 'Add' }}"
-    (btnClick)="toggleAddTask()"
-  ></app-button>
+  @if (hasRoute('/') || hasRoute('/my-listings')) {
+    <app-button
+      color="{{ showAddTask ? 'red' : 'green' }}"
+      text="{{ showAddTask ? 'Close' : 'Add' }}"
+      (btnClick)="toggleAddTask()"
+    ></app-button>
+  }
 </header>

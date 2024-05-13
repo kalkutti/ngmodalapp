@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TaskService } from '../../services/task.service';
 import { Location } from '@angular/common';
 import { Task } from '../../Task';
 
 @Component({
-  selector: 'app-listing-detail-page',
-  templateUrl: './listing-detail-page.component.html',
-  styleUrls: ['./listing-detail-page.component.css']
+    selector: 'app-listing-detail-page',
+    templateUrl: './listing-detail-page.component.html',
+    styleUrls: ['./listing-detail-page.component.css'],
+    standalone: true,
+    imports: [RouterLink]
 })
 export class ListingDetailPageComponent {
   task: Task;
