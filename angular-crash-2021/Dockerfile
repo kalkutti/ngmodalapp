@@ -1,6 +1,6 @@
 ARG WORK_DIR=/build
 
-FROM node:14.17 as builder
+FROM node:18.20 as builder
 
 ARG WORK_DIR
 ENV PATH ${WORK_DIR}/node_modules/.bin:$PATH
@@ -16,7 +16,7 @@ RUN npm install
 
 COPY . ${WORK_DIR}
 
-RUN ng build --prod
+RUN ng build
 
 FROM nginx:latest
 
