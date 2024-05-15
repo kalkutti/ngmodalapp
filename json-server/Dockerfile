@@ -1,4 +1,4 @@
-FROM node:14.17
+FROM node:18.20
 
 RUN npm install -g json-server
 
@@ -12,4 +12,4 @@ COPY db.json ${WORK_DIR}/db.json
 
 EXPOSE 5000
 
-CMD json-server -H 0.0.0.0 --port 5000 --watch ${WORK_DIR}/db.json
+CMD json-server -h 0.0.0.0 --port 5000 --watch ${WORK_DIR}/db.json
